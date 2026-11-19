@@ -59,12 +59,13 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="./hero-kumbolo.jpg" 
+    <!-- Hero Section dengan Animasi Zoom saat Scroll -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img id="hero-bg" 
+                 src="./hero-kumbolo.jpg" 
                  alt="Danau Ranu Kumbolo" 
-                 class="w-full h-full object-cover opacity-60">
+                 class="w-full h-full object-cover opacity-60 will-change-transform transition-transform duration-150 ease-out scale-100">
             <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/65 to-transparent"></div>
         </div>
 
@@ -378,18 +379,27 @@
                 </div>
             </div>
 
-            <!-- Copyright 2026 -->
-            <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
+            <!-- Copyright 2026 & Credit -->
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-400 text-sm space-y-1.5">
                 <p>&copy; 2026 <span class="text-white font-semibold">Rifqy Travel</span>. All rights reserved.</p>
-                <p class="text-xs text-gray-500 mt-1">Open Trip Ranu Kumbolo • Mount Semeru National Park</p>
+                <p class="text-xs text-sage font-medium">Made By Vixarette Member</p>
             </div>
         </div>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
+    <!-- Initialize Lucide Icons & Scroll Zoom Animation -->
     <script>
         lucide.createIcons();
+
+        const heroBg = document.getElementById('hero-bg');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY <= window.innerHeight) {
+                const scale = 1 + (scrollY * 0.00035);
+                const translateY = scrollY * 0.25;
+                heroBg.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+            }
+        }, { passive: true });
     </script>
 </body>
 </html>
-
