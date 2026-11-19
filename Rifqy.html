@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifqy Travel - Open Trip Ranu Kumbolo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#0b3d24',
+                        forestDark: '#072918',
+                        sage: '#b8dec7',
+                        sageLight: '#d8efe1',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        script: ['"Kaushan Script"', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-forest text-white font-sans antialiased selection:bg-sage selection:text-forest">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-forest/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 bg-white text-forest px-4 py-2 rounded-full font-bold shadow-md hover:scale-105 transition">
+                    <span class="bg-forest text-white p-1.5 rounded-full">
+                        <i data-lucide="plane" class="w-4 h-4"></i>
+                    </span>
+                    <span>Rifqy Travel</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+                    <a href="#packages" class="hover:text-sage transition">Packages</a>
+                    <a href="#activities" class="hover:text-sage transition">Activities</a>
+                    <a href="#about" class="hover:text-sage transition">About Us</a>
+                    <a href="#contact" class="bg-sage text-forest px-5 py-2.5 rounded-full hover:bg-white transition font-bold">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Image (Lake Ranu Kumbolo) -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Ranu Kumbolo Lake" 
+                 class="w-full h-full object-cover opacity-55">
+            <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/60 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-sage text-sm font-semibold mb-6">
+                <i data-lucide="mountain" class="w-4 h-4"></i>
+                <span>2400 M DPL / ASL • Mount Semeru National Park</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight uppercase leading-none mb-2">
+                OPEN TRIP
+            </h1>
+            <h2 class="font-script text-5xl md:text-7xl text-sage mb-6">
+                Ranu Kumbolo
+            </h2>
+            
+            <p class="max-w-xl text-gray-200 text-lg md:text-xl mb-8 leading-relaxed">
+                Experience the magical sunrise, lakeside camping, and breathtaking lavender fields of Oro-Oro Ombo with safe, comfortable, and hassle-free service.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#packages" class="bg-sage text-forest font-bold px-8 py-4 rounded-full hover:bg-white transition flex items-center justify-center gap-2 shadow-lg">
+                    <span>Explore Packages</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="https://wa.me/62882006666239?text=Halo%20Rifqy%20Travel,%20saya%20tertarik%20dengan%20Open%20Trip%20Ranu%20Kumbolo" 
+                   target="_blank"
+                   class="bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/20 transition flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span>Chat Rifqy</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package List Section -->
+    <section id="packages" class="py-24 bg-forestDark relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sage font-semibold tracking-wider uppercase text-sm">Choose Your Journey</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold mt-2">Package List</h2>
+                <div class="w-24 h-1 bg-sage mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Package 1: Kumbolo Express -->
+                <div class="bg-forest border border-white/15 rounded-3xl p-8 flex flex-col justify-between hover:border-sage transition duration-300 shadow-xl">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-sage/20 text-sage text-xs font-bold px-3 py-1 rounded-full">2D1N</span>
+                            <i data-lucide="compass" class="w-6 h-6 text-sage"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Kumbolo Express (2D1N)</h3>
+                        <div class="text-3xl font-extrabold text-sage mb-6">
+                            Rp 750.000 <span class="text-sm font-normal text-gray-300">/ person</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-200 text-sm leading-relaxed mb-8">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Shared transport from Malang</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Park permits included</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Shared tent with sleeping pads</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Three simple camp meals</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Local guide with a group porter</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/62882006666239?text=Halo%20Rifqy%20Travel,%20saya%20ingin%20booking%20paket%20Kumbolo%20Express%20(2D1N)" 
+                       target="_blank"
+                       class="w-full py-3.5 px-6 rounded-full bg-white/10 hover:bg-sage hover:text-forest font-bold text-center transition flex items-center justify-center gap-2">
+                        <span>Book Kumbolo Express</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Package 2: Golden Sunrise (Featured) -->
+                <div class="bg-forest border-2 border-sage rounded-3xl p-8 flex flex-col justify-between relative shadow-2xl transform md:-translate-y-4">
+                    <div class="absolute -top-4 right-8 bg-sage text-forest text-xs font-extrabold px-4 py-1 rounded-full uppercase tracking-wide">
+                        Most Popular
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-sage/20 text-sage text-xs font-bold px-3 py-1 rounded-full">2D1N</span>
+                            <i data-lucide="sunrise" class="w-6 h-6 text-sage"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Golden Sunrise (2D1N)</h3>
+                        <div class="text-3xl font-extrabold text-sage mb-6">
+                            Rp 2.450.000 <span class="text-sm font-normal text-gray-300">/ person</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-200 text-sm leading-relaxed mb-8">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Private transport from Malang or Surabaya</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Upgraded tent with air mattresses</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Personal porter for your bags</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Five meals with a lakeside BBQ</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Private guide who takes sunrise & stargazing photos</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/62882006666239?text=Halo%20Rifqy%20Travel,%20saya%20ingin%20booking%20paket%20Golden%20Sunrise%20(2D1N)" 
+                       target="_blank"
+                       class="w-full py-3.5 px-6 rounded-full bg-sage text-forest hover:bg-white font-bold text-center transition flex items-center justify-center gap-2 shadow-lg">
+                        <span>Book Golden Sunrise</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Package 3: Highland Odyssey -->
+                <div class="bg-forest border border-white/15 rounded-3xl p-8 flex flex-col justify-between hover:border-sage transition duration-300 shadow-xl">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-sage/20 text-sage text-xs font-bold px-3 py-1 rounded-full">3D2N</span>
+                            <i data-lucide="tent" class="w-6 h-6 text-sage"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Highland Odyssey (3D2N)</h3>
+                        <div class="text-3xl font-extrabold text-sage mb-6">
+                            Rp 3.600.000 <span class="text-sm font-normal text-gray-300">/ person</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-200 text-sm leading-relaxed mb-8">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Round-trip transport and permits</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>1 night in Ranu Pani homestay + 1 night camping</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Full trekking gear included</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Seven meals with snacks</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                                <span>Guided walks to Tanjakan Cinta & Oro-Oro Ombo</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/62882006666239?text=Halo%20Rifqy%20Travel,%20saya%20ingin%20booking%20paket%20Highland%20Odyssey%20(3D2N)" 
+                       target="_blank"
+                       class="w-full py-3.5 px-6 rounded-full bg-white/10 hover:bg-sage hover:text-forest font-bold text-center transition flex items-center justify-center gap-2">
+                        <span>Book Highland Odyssey</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-24 bg-forest">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-sage font-semibold tracking-wider uppercase text-sm">Unforgettable Moments</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mt-1">Activities</h2>
+                </div>
+                <p class="text-gray-300 max-w-md text-sm md:text-base">
+                    Discover curated outdoor experiences around Ranu Kumbolo, from lakeside barbeques to exploring iconic mountain trails.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Activity 1 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" 
+                         alt="Barbeque beside lake" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+                        <h3 class="text-xl font-bold text-white">Barbeque beside lake</h3>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80" 
+                         alt="Enjoy the sunrise" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+                        <h3 class="text-xl font-bold text-white">Enjoy the sunrise</h3>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80" 
+                         alt="Explore Tanjakan Cinta" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+                        <h3 class="text-xl font-bold text-white">Explore Tanjakan Cinta</h3>
+                    </div>
+                </div>
+
+                <!-- Activity 4 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" 
+                         alt="Camping" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+                        <h3 class="text-xl font-bold text-white">Camping</h3>
+                    </div>
+                </div>
+
+                <!-- Activity 5 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] sm:col-span-2 lg:col-span-2">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Explore Oro-Oro Ombo" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Explore Oro-Oro Ombo</h3>
+                            <p class="text-sm text-gray-300 mt-1">Walk through the iconic scenic valley with Mount Semeru in the background.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-sage text-forest">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Trekking Group" 
+                         class="w-full h-[400px] object-cover">
+                </div>
+                
+                <div>
+                    <span class="uppercase tracking-wider font-bold text-sm text-forest/70">Who We Are</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mt-2 mb-6">About Us</h2>
+                    <p class="text-lg leading-relaxed font-medium text-forest/90 mb-8">
+                        As a professional travel agency, we are committed to providing a safe, comfortable, and hassle-free travel experience. Each trip is personally tailored to your needs, featuring transparent pricing, friendly service, and full support from the beginning to the end of your journey. We do more than just sell tickets or travel packages; we ensure that every moment of your trip becomes a memorable and enjoyable experience.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-forest/20">
+                        <div>
+                            <div class="text-2xl font-extrabold">100%</div>
+                            <div class="text-xs font-semibold uppercase text-forest/75">Transparent Pricing</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold">24/7</div>
+                            <div class="text-xs font-semibold uppercase text-forest/75">Full Trip Support</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold">Local</div>
+                            <div class="text-xs font-semibold uppercase text-forest/75">Expert Guides</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Info & Copyright Footer -->
+    <footer id="contact" class="bg-forestDark pt-20 pb-12 border-t border-white/10">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- White Card for Order Info (Website link removed) -->
+            <div class="bg-white text-forest rounded-3xl p-8 md:p-12 shadow-2xl">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-extrabold">Order Info</h2>
+                    <p class="text-gray-600 mt-2">Ready to join the next Open Trip to Ranu Kumbolo? Reach out to us!</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Phone / WhatsApp -->
+                    <a href="https://wa.me/62882006666239" target="_blank" 
+                       class="flex flex-col items-center text-center p-6 rounded-2xl bg-sageLight/50 hover:bg-sage transition">
+                        <div class="w-12 h-12 rounded-full bg-forest text-white flex items-center justify-center mb-3">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-gray-500">WhatsApp / Call</span>
+                        <span class="font-bold text-base mt-1">+62 8820-0666-6239 (Rifqy)</span>
+                    </a>
+
+                    <!-- Location -->
+                    <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-sageLight/50">
+                        <div class="w-12 h-12 rounded-full bg-forest text-white flex items-center justify-center mb-3">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-gray-500">Basecamp</span>
+                        <span class="font-bold text-base mt-1">Rifqy's House</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright 2026 -->
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 <span class="text-white font-semibold">Rifqy Travel</span>. All rights reserved.</p>
+                <p class="text-xs text-gray-500 mt-1">Open Trip Ranu Kumbolo • Mount Semeru National Park</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
